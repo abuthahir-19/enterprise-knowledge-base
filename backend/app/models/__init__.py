@@ -1,0 +1,24 @@
+from app.models.user import User
+from app.models.category import Category
+from app.models.tag import Tag, article_tags
+from app.models.article import Article
+from app.models.attachment import Attachment
+from app.models.comment import Comment
+from app.models.rating import Rating
+from app.models.bookmark import Bookmark
+from app.models.approval import ApprovalHistory
+from app.models.search_log import SearchLog
+
+__all__ = [
+    "User",
+    "Category",
+    "Tag",
+    "article_tags",
+    "Article",
+    "Attachment",
+    "Comment",
+    "Rating",
+    "Bookmark",
+    "ApprovalHistory",
+    "SearchLog",
+]
