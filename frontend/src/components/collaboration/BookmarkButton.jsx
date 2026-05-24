@@ -13,7 +13,7 @@ export default function BookmarkButton({ articleId }) {
     retry: false,
   })
 
-  const isBookmarked = bookmarkData?.bookmarked ?? false
+  const isBookmarked = bookmarkData?.is_bookmarked ?? false
 
   const addMutation = useMutation({
     mutationFn: () => collaborationService.bookmarkArticle(articleId),
